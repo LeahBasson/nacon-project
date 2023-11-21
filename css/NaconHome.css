@@ -1,0 +1,626 @@
+* 
+{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body
+{
+	max-width: 1366px;
+	margin: auto;
+	height: auto;
+	font-family: Tahoma;
+}
+
+.grid-container 
+{
+  display: grid;
+  grid-template-columns: repeat (9,1fr);
+}
+
+/* Slideshow container */
+.slideshow-container 
+{
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text 
+{
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext 
+{
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot 
+{
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active 
+{
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade 
+{
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade 
+{
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) 
+{
+  .text {font-size: 11px}
+}
+
+.ContentOne
+{
+	display: flex;
+	justify-content: center;
+	position: relative;
+	align-items: center;
+	grid-column: 1/-1;
+	width: 1366px;
+	height: 560px;
+	margin: auto;
+	background-color: #09152f;
+	margin-top: -41px;
+}
+
+.ContentOne h1
+{
+	position: absolute;
+	top: 40px;
+	color: white;
+}
+
+.card 
+{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 21%;
+  background-color: #101111;
+  position: absolute;
+  left: 70px;
+  top: 130px;
+}
+
+.card img
+{
+	width: 100%;
+}
+
+.card:hover 
+{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container 
+{
+  padding: 2px 16px;
+  height: 160px;
+}
+
+.card h3
+{
+	color: white;
+	margin-top: 10px;
+}
+
+.Rat1 img
+{
+	width: 50%;
+}
+
+.button1
+{
+  border: none;
+  color: white;
+  padding: 10px 59px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  margin-top: 17px;
+}
+
+.button1 
+{
+  background-color: #061f61;
+  color: white;
+  border: 1px solid black;
+}
+
+.card2 
+{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 21%;
+  background-color: #101111;
+  position: absolute;
+  left: 380px;
+  top: 130px;
+}
+
+.card2 img
+{
+	width: 100%;
+}
+
+.card2:hover 
+{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card2 h3
+{
+	color: white;
+	margin-top: 10px;
+}
+
+.Rat2 img
+{
+	width: 50%;
+}
+
+.card3
+{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 21%;
+  background-color: #101111;
+  position: absolute;
+  left: 690px;
+  top: 130px;
+}
+
+.card3 img
+{
+	width: 100%;
+}
+
+.card3:hover 
+{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card3 h3
+{
+	color: white;
+	margin-top: 10px;
+}
+
+.Rat3 img
+{
+	width: 50%;
+}
+
+.card4
+{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 21%;
+  background-color: #101111;
+  position: absolute;
+  left: 1000px;
+  top: 130px;
+}
+
+.card4 img
+{
+	width: 100%;
+}
+
+.card4:hover 
+{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card4 h3
+{
+	color: white;
+	margin-top: 10px;
+}
+
+.Rat4 img
+{
+	width: 50%;
+}
+
+.slideshow2-container2 
+{
+  width: 100%;
+  position: relative;
+  margin: auto;
+  z-index: 0;
+}
+
+/* Next & previous buttons */
+.prev, .next 
+{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next 
+{
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover 
+{
+  background-color: rgba(0,0,0,0.8);
+}
+
+.ButtonLink
+{
+	margin-left: 580px;
+	margin-top: -130px;
+	z-index: 1;
+}
+
+.button2
+{
+  border: none;
+  color: white;
+  padding: 10px 59px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.button2 
+{
+  background-color: #061f61;
+  color: white;
+  border: 1px solid black;
+}
+
+.ButtonLink2
+{
+	margin-left: 880px;
+	margin-top: -130px;
+	z-index: 1;
+}
+
+.button3
+{
+  border: none;
+  color: white;
+  padding: 10px 59px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.button3 
+{
+  background-color: #101111;
+  color: white;
+  border: 1px solid black;
+}
+
+.ContentTwo
+{
+	display: flex;
+	justify-content: center;
+	position: relative;
+	align-items: center;
+	grid-column: 1/-1;
+	width: 1368px;
+	height: 1800px;
+	margin: auto;
+	background-color: white;
+	margin-top: -8px;
+}
+
+.ContentTwo h2
+{
+	color: #101111;
+	position: absolute;
+	top: 30px;
+	font-size: 38px;
+}
+
+.Block1
+{
+	background-color: #101111;
+	width: 852px;
+	height: 383px;
+	position: absolute;
+	top: 100px;
+}
+
+.Image1 img
+{
+	width: 45%;
+}
+
+.Heading1
+{
+	position: absolute;
+	left: 440px;
+	top: 70px;
+	color: white;
+	font-size: 26px;
+}
+
+.About
+{
+	position: absolute;
+	left: 440px;
+	top: 140px;
+	color: white;
+	font-size: 22px;
+}
+
+.ButtonLink3
+{
+	position: absolute;
+	top: 240px;
+	left: 440px;
+}
+
+.button4
+{
+  border: none;
+  color: white;
+  padding: 10px 59px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.button4 
+{
+  background-color: #061f61;
+  color: white;
+  border: 1px solid black;
+}
+
+.Block2
+{
+	background-color: #101111;
+	width: 852px;
+	height: 383px;
+	position: absolute;
+	top: 520px;
+}
+
+.Image2 img
+{
+	width: 452px;
+	height: 383px;
+	position: absolute;
+	left: 400px;
+}
+
+.Heading2
+{
+	position: absolute;
+	left: 60px;
+	top: 70px;
+	color: white;
+	font-size: 26px;
+}
+
+.About2
+{
+	position: absolute;
+	left: 60px;
+	top: 140px;
+	color: white;
+	font-size: 22px;
+}
+
+.ButtonLink4
+{
+	position: absolute;
+	top: 240px;
+	left: 60px;
+}
+
+.button5
+{
+  border: none;
+  color: white;
+  padding: 10px 59px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.button5 
+{
+  background-color: #061f61;
+  color: white;
+  border: 1px solid black;
+}
+
+.Block3
+{
+	background-color: #101111;
+	width: 852px;
+	height: 383px;
+	position: absolute;
+	top: 940px;
+}
+
+.Image3 img
+{
+	width: 452px;
+	height: 383px;
+	position: absolute;
+}
+
+.Heading3
+{
+	position: absolute;
+	left: 495px;
+	top: 70px;
+	color: white;
+	font-size: 26px;
+}
+
+.About3
+{
+	position: absolute;
+	left: 495px;
+	top: 140px;
+	color: white;
+	font-size: 22px;
+}
+
+.ButtonLink5
+{
+	position: absolute;
+	top: 240px;
+	left: 495px;
+}
+
+.button6
+{
+  border: none;
+  color: white;
+  padding: 10px 59px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.button6
+{
+  background-color: #061f61;
+  color: white;
+  border: 1px solid black;
+}
+
+.Block4
+{
+	background-color: #101111;
+	width: 852px;
+	height: 383px;
+	position: absolute;
+	top: 1360px;
+}
+
+.Image4 img
+{
+	width: 452px;
+	height: 383px;
+	position: absolute;
+	left: 400px;
+}
+
+.Heading4
+{
+	position: absolute;
+	left: 40px;
+	top: 70px;
+	color: white;
+	font-size: 26px;
+}
+
+.About4
+{
+	position: absolute;
+	left: 40px;
+	top: 140px;
+	color: white;
+	font-size: 22px;
+}
+
+.ButtonLink6
+{
+	position: absolute;
+	top: 240px;
+	left: 40px;
+}
+
+.button7
+{
+  border: none;
+  color: white;
+  padding: 10px 59px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.button7
+{
+  background-color: #061f61;
+  color: white;
+  border: 1px solid black;
+}
+

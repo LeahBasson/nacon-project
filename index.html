@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Nacon HOME</title>
+	<link rel="stylesheet" href="css/NaconHome.css">
+	<link rel="stylesheet" href="css/NaconHead&Nav&Footer.css">
+	
+</head>
+
+<body>
+
+<div class="grid-container">
+	
+<div class="Header">
+	
+	<div class="NaconLogo"><a href="index.html"><img src="home-images/logo_large.png" style="width:90px; height:90px;"></a></div>
+	
+	<div class="HeaderIcons">
+	<img src="home-images/icons/search.png" style="width:25px; height:25px;">
+	<a href="NaconShoppingCart.html"><img src="home-images/icons/shopping.png" style="width:25px; height:25px;"></a>
+	<img src="home-images/icons/user icon.png" style="width:25px; height:25px;">
+	</div>
+	
+</div>	
+	
+<div class="NavBar">
+
+	<a href="#" style="color:#355dc6;">Home</a>
+	<a href="NaconPeripherals.html">Peripherals</a>
+	<a href="NaconVideoGames.html">Video Games</a>
+
+</div>	
+	
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="home-images/Banner/Banner1.jpg" style="width:100%; height:600px;">
+</div>
+
+<div class="mySlides fade">
+  <img src="home-images/Banner/Banner5.jpg" style="width:100%; height:600px;">
+</div>
+
+<div class="mySlides fade">
+  <img src="home-images/Banner/Banner4.jpg" style="width:100%; height:600px;">
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+	
+	
+<div class="ContentOne">
+
+<h1>Recommendations</h1>
+
+<div class="card">
+  <img src="home-images/Products/Controller2.png" alt="Headphones" >
+  <div class="container">
+    <h3><b>REVOLUTION 5 PRO</b></h3> 
+	<div class="Rat1"><img src="home-images/StarRating2.png"></div>
+	<h3>€229.90</h3> 
+	<a href="#"><button class="button1">Add To Basket</button></a>
+  </div>
+</div>
+
+<div class="card2">
+  <img src="home-images/Products/Controller1.png" alt="Headphones" >
+  <div class="container">
+    <h3><b>REVOLUTION 5 PRO</b></h3> 
+	<div class="Rat2"><img src="home-images/StarRating2.png"></div>
+	<h3>€229.90</h3> 
+	<a href="#"><button class="button1">Add To Basket</button></a>
+  </div>
+</div>
+
+<div class="card3">
+  <img src="home-images/Products/Rig600.png" alt="Headphones" >
+  <div class="container">
+    <h3><b>RIG 600 PRO HS</b></h3> 
+	<div class="Rat3"><img src="home-images/StarRating2.png"></div>
+	<h3>€99.90</h3> 
+	<a href="#"><button class="button1">Add To Basket</button></a>
+  </div>
+</div>
+
+<div class="card4">
+  <img src="home-images/Products/Controller3.png" alt="Headphones" >
+  <div class="container">
+    <h3><b>EVOL-X</b></h3> 
+	<div class="Rat4"><img src="home-images/StarRating2.png"></div>
+	<h3>€34.90</h3> 
+	<a href="#"><button class="button1">Add To Basket</button></a>
+  </div>
+</div>
+
+</div>	
+
+
+
+<!-- Slideshow 2 -->
+	
+<div class="slideshow2-container2">
+
+<div class="mySlides2">
+  <img src="home-images/Slides/Slide3.png" style="width:100%; height:600px;">
+</div>
+
+<div class="mySlides2">
+  <img src="home-images/Slides/Slide4.png" style="width:100%; height:600px;">
+</div>
+
+<a class="prev" onclick="plusSlides2(-1)">❮</a>
+<a class="next" onclick="plusSlides2(1)">❯</a>
+
+</div>
+
+<a class="ButtonLink" href="#"><button class="button2">Add To Basket</button></a>
+<a class="ButtonLink2" href="#"><button class="button3">View Product</button></a>
+
+<script>
+let slideIndex2 = 1;
+showSlides2(slideIndex2);
+
+function plusSlides2(n) {
+  showSlides2(slideIndex2 += n);
+}
+
+function currentSlide2(n) {
+  showSlides2(slideIndex2 = n);
+}
+
+function showSlides2(n) {
+  let i;
+  let slides2 = document.getElementsByClassName ("mySlides2");
+  let dots2 = document.getElementsByClassName ("dot2");
+  if (n > slides2.length) {slideIndex2 = 1}    
+  if (n < 1) {slideIndex2 = slides2.length}
+  for (i = 0; i < slides2.length; i++) {
+    slides2[i].style.display = "none";  
+  }
+  for (i = 0; i < dots2.length; i++) {
+    dots2[i].className = dots2[i].className.replace(" active", "");
+  }
+  slides2[slideIndex2-1].style.display = "block";  
+  dots2[slideIndex2-1].className += " active";
+}
+</script>
+
+<div class="ContentTwo">
+
+	<h2>Discover</h2>
+	
+	<div class="Block1">
+	<div class="Image1"><img src="home-images/controllers.jpg"></div>
+	<div class="Heading1"><b>Controllers</b></div>
+	<div class="About">Choose your weapon and get 
+ready <br> to smash records on 
+console and PC.</div>
+<a class="ButtonLink3" href="#"><button class="button4">All Our Controllers</button></a>
+	</div>
+
+	<div class="Block2">
+	<div class="Image2"><img src="home-images/video games.jpg"></div>
+	<div class="Heading2"><b>Video Games</b></div>
+	<div class="About2">Explore the world of NACON <br> 
+video games!</div>
+ <a class="ButtonLink4" href="#"><button class="button5">All Our Video Games</button></a> 
+	</div> 
+
+	<div class="Block3">
+	<div class="Image3"><img src="home-images/nacon Rig.jpg"></div>
+	<div class="Heading3"><b>Rig</b></div>
+	<div class="About3">Join the RIG team and enhance <br>
+ your gaming experience!</div>
+ <a class="ButtonLink5" href="#"><button class="button6">All Our Rig</button></a> 
+	</div> 
+
+	<div class="Block4">
+	<div class="Image4"><img src="home-images/nacon switch.jpg"></div>
+	<div class="Heading4"><b>Switch</b></div>
+	<div class="About4">Join the RIG team and enhance <br>
+ your gaming experience!</div>
+ <a class="ButtonLink6" href="#"><button class="button7">All Our Switch</button></a>
+	</div> 
+
+</div>	
+	
+<div class="ContentThree">
+
+	<div class="OurBenefits"></div>
+	<h5>Our Benefits</h5>
+	<div class="Icon1"><img src="home-images/icons/shield.png"></div>
+	<div class="Icon2"><img src="home-images/icons/mouse.png"></div>
+	<div class="Icon3"><img src="home-images/icons/delivery.png"></div>
+	<div class="Icon4"><img src="home-images/icons/shipping.png"></div>
+	
+	<div class="Security"><b>PAY SECURELY</b> <br> On our website!</div>
+	<div class="Mouse"><b>FAST ORDERS</b> <br> In 3-click</div>
+	<div class="Delivery"><b>FREE DELIVERY</b> <br> For purchase of $80 or more.</div>
+	<div class="Shipping"><b>SHIPPING</b> <br> Within 48H-72H</div>
+	
+</div>
+
+<div class="Footer">
+
+<div class="ContactIcon"><img src="home-images/icons/phone.png"></div>
+<div class="Text"><b>Contact Us:</b></div>
+<div class="HowTo">By Email<br>By phone:+44(0)8081010970<br>9a.m. to 6p.m. Monday to Friday</div>
+
+<div class="SubscribeIcon"><img src="home-images/icons/email.png"></div>
+<div class="SubscribeText"><b>SUBSCRIBE</b> <br>and enjoy 10% off!</div>
+
+<input type="text" class="EmailTextbox" name="Email" placeholder="Email">
+<input type="checkbox" class="checkbox" >
+<div class="SubmitText">By submitting this form,I accept that the information <br> provided may be used to send me Nacon newsletters <br> 
+and marketing emails.<a  target="_blank">Privacy Policy.</a></div>
+</div>
+
+</div>	
+	
+</body>
+</html>

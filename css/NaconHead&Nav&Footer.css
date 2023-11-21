@@ -1,0 +1,295 @@
+* 
+{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body
+{
+	max-width: 1366px;
+	margin: auto;
+	height: auto;
+}
+
+.grid-container 
+{
+  display: grid;
+  grid-template-columns: repeat (9,1fr);
+}
+
+.Header
+{
+	width: 1366px;
+	height: 114px;
+	display: flex;
+	justify-content: flex-start;
+	position: relative;
+	align-items: center;
+	grid-column: 1/-1;
+	margin: auto;
+	background-color: #0a0f27;
+}
+
+.NaconLogo img
+{
+	margin-top: 10px;
+	margin-left: 30px;
+}
+
+.NavBar
+{
+	margin-top: -62px;
+	z-index: 2;
+	margin-left: 600px;
+}
+
+/* Style the navigation bar links */
+.NavBar a 
+{
+  display: flex-column;
+  height: 100px;
+  color: white;
+  font-family: Tahoma;
+  font-size: 20px; 
+  text-align: center;
+  padding: 40px;
+  font-weight: bold;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.NavBar a:hover
+{
+	color: #355dc6;
+}
+
+.HeaderIcons
+{
+	margin-left: 1060px;
+	margin-top: 9px;
+}
+
+.ContentThree
+{
+	display: flex;
+	justify-content: center;
+	position: relative;
+	align-items: center;
+	grid-column: 1/-1;
+	width: 1368px;
+	height: 333px;
+	margin: auto;
+	background-color: #0b0119;
+}
+
+.ContentThree h5
+{
+	color: white;
+	font-family: Tahoma;
+	font-size: 38px;
+	position: absolute;
+	top: 20px;
+}
+
+
+.Icon1
+{
+	width: 55px;
+	height: 55px;
+	background-color: white;
+	position: absolute;
+	left: 200px;
+	top: 100px;
+}
+
+.Icon1 img
+{
+	width: 100%;
+}
+
+.Icon2
+{
+	width: 55px;
+	height: 55px;
+	background-color: white;
+	position: absolute;
+	left: 800px;
+	top: 100px;
+}
+
+.Icon2 img
+{
+	width: 100%;
+}
+
+.Icon3
+{
+	width: 55px;
+	height: 55px;
+	background-color: white;
+	position: absolute;
+	left: 200px;
+	top: 230px;
+}
+
+.Icon4 img
+{
+	width: 100%;
+}
+
+.Icon4
+{
+	width: 55px;
+	height: 55px;
+	background-color: white;
+	position: absolute;
+	left: 800px;
+	top: 230px;
+}
+
+.Icon3 img
+{
+	width: 100%;
+}
+
+.Security
+{
+	color: white;
+	font-family: Tahoma;
+	font-size: 22px;
+	position: absolute;
+	top: 98px;
+	left: 280px;
+}
+
+.Mouse
+{
+	color: white;
+	font-family: Tahoma;
+	font-size: 22px;
+	position: absolute;
+	top: 98px;
+	left: 880px;
+}
+
+.Delivery
+{
+	color: white;
+	font-family: Tahoma;
+	font-size: 22px;
+	position: absolute;
+	top: 230px;
+	left: 280px;
+}
+
+.Shipping
+{
+	color: white;
+	font-family: Tahoma;
+	font-size: 22px;
+	position: absolute;
+	top: 230px;
+	left: 880px;
+}
+
+.Footer
+{
+	display: flex;
+	justify-content: center;
+	position: relative;
+	align-items: center;
+	grid-column: 1/-1;
+	width: 1368px;
+	height: 333px;
+	margin: auto;
+	background-color: #0a0f27;
+}
+
+.ContactIcon
+{
+	position: absolute;
+	left: 50px; 
+	top: 50px;
+}
+
+.ContactIcon img
+{
+	width: 10%;
+}
+
+.Text
+{
+	font-size: 22px;
+	color: white;
+	position: absolute;
+	left: 120px; 
+	top: 65px;
+}
+
+.HowTo
+{
+	font-size: 22px;
+	color: white;
+	position: absolute;
+	left: 120px; 
+	top: 125px;
+}
+
+.SubscribeIcon
+{
+	position: absolute;
+	left: 750px; 
+	top: 60px;
+}
+
+.SubscribeIcon img
+{
+	width: 8%; 
+}
+
+.SubscribeText
+{
+	font-size: 22px;
+	color: white;
+	position: absolute;
+	left: 800px; 
+	top: 68px;
+}
+
+.EmailTextbox
+{	
+	position: absolute;
+	left: 800px;
+	top: 160px;
+	width: 30%;
+	height: 40px;
+}
+
+.checkbox
+{
+	cursor: pointer;
+	width: 10%;
+	height: 20px;
+	position: absolute;
+	left: 743px;
+	top: 230px;
+	content: "";
+}
+
+.SubmitText
+{
+	color: white;
+	font-family: Tahoma;
+	font-size: 18px;
+	position: absolute;
+	left: 833px;
+	top: 230px;
+}
+
+/* mouse over link */
+.SubmitText a:hover {
+  color: #3d5ebe;
+  text-decoration:underline;
+}

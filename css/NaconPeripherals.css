@@ -1,0 +1,275 @@
+* 
+{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body
+{
+	max-width: 1366px;
+	margin: auto;
+	height: auto;
+	font-family: Arial;
+}
+
+.grid-container 
+{
+  display: grid;
+  grid-template-columns: repeat (9,1fr);
+}
+
+.ContentOne
+{
+	display: flex;
+	justify-content: center;
+	position: relative;
+	align-items: center;
+	grid-column: 1/-1;
+	width: 1366px;
+	height: 1322px;
+	margin: auto;
+	background-color: white;
+	flex-wrap: wrap;
+}
+
+.ContentOne > div
+{
+	background-color: #061f61;
+	width: 48%;
+	height: 250px;
+	margin-left: 20px;
+}
+
+.Block
+{
+	transition: transform 1s;
+}
+
+.Block:hover
+{
+  transform: scale(1.05,1.05);
+}
+
+.shadow 
+{
+  box-shadow: 3px 4px 5px 6px #c7c7c7;
+}
+
+.inner-shadow 
+{
+  box-shadow: inset 0 0 15px 0 #c7c7c7;
+}
+
+.Block h1
+{
+	font-family: Tahoma;
+	font-size: 28px;
+	color: white;
+	margin-left: 250px;
+	margin-top: 40px;
+	text-decoration: underline;
+}
+
+.Images img
+{
+	width: 38%;
+}
+
+.Images
+{
+	margin-left: 250px;
+	margin-top: 15px;
+}
+
+/* .flex-containerThree
+{
+	display:flex;
+	max-width:990px;
+	margin:auto;
+	background-color:white;
+	flex-wrap:wrap;
+	justify-content:space-between;
+	align-content:space-between;
+	flex-direction:column;
+}
+
+.OurBenefits
+{
+	width:100%;
+	height:300%;
+	background-color:#0b0119;
+	margin-top:40px;
+}
+
+h2
+{
+	color:white;
+	font-family:Tahoma;
+	font-size:28px;
+	font-weight:lighter;
+	margin-left:20px;
+}
+
+.IconOne
+{
+	width:7%;
+	height:19%;
+	background-color:white;
+	margin-left:180px;
+}
+
+.IconTwo
+{
+	width:7%;
+	height:19%;
+	background-color:white;
+	margin-left:180px;
+	margin-top:50px;
+}
+
+.IconThree
+{
+	width:7%;
+	height:19%;
+	background-color:white;
+	margin-left:580px;
+	margin-top:-160px;
+}
+
+.IconFour
+{
+	width:7%;
+	height:19%;
+	background-color:white;
+	margin-left:580px;
+	margin-top:50px;
+}
+
+.Security
+{
+	margin-left:260px;
+	margin-top:-190px;
+}
+
+h3
+{
+	color:white;
+	font-family:Tahoma;
+	font-size:20px;
+	font-weight:bold;
+}
+
+p
+{
+	color:white;
+	font-family:Tahoma;
+	font-size:20px;
+}
+
+.Delivery
+{
+	margin-left:260px;
+	margin-top:40px;
+}
+
+.Mouse
+{
+	margin-left:660px;
+	margin-top:-190px;
+}
+
+.Shipping
+{
+	margin-left:660px;
+	margin-top:40px;
+}
+
+.Footer
+{
+	width:100%;
+	height:298px;
+	background-color:#0a0f27;
+}
+
+.ContactUsIcon
+{
+	margin-left:20px;
+	margin-top:20px;
+}
+
+.ContactUsText
+{
+	color:white;
+	font-family:Tahoma;
+	font-size:24px;
+	font-weight:bold;
+	margin-left:90px;
+	margin-top:-50px;
+}
+
+.HowTo
+{
+	color:white;
+	font-family:Tahoma;
+	font-size:22px;
+	margin-left:90px;
+	margin-top:20px;
+}
+
+.SubscribeIcon
+{
+	margin-left:540px;
+	margin-top:-135px;
+}
+
+.SubcribeText
+{
+	color:white;
+	font-family:Tahoma;
+	font-size:24px;
+	margin-left:600px;
+	margin-top:-50px;
+}
+
+.EmailTextbox
+{
+	margin-left:540px;
+	margin-top:30px;
+	width:40%;
+	height:10%;
+}
+
+.checkbox
+{
+	cursor: pointer;
+	width:10%;
+	height:10%;
+	margin-top:10px;
+	margin-left:504px;
+	content: "";
+}
+
+.SubmitText
+{
+	color:white;
+	font-family:Tahoma;
+	font-size:18px;
+	margin-left:590px;
+	margin-top:-30px;
+}
+
+
+/* visited link */
+/*.SubmitText a:visited {
+  color: green;
+}
+
+/* mouse over link */
+/*.SubmitText a:hover {
+  color: #3d5ebe;
+  text-decoration:underline;
+}
+*/
+
+

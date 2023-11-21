@@ -1,0 +1,116 @@
+.flex-container
+{
+	display:flex;
+	max-width:990px;
+	height:auto;
+	margin:auto;
+	background-color: white;
+	flex-wrap:wrap;
+	justify-content:space-between;
+	align-content:space-between;
+	flex-direction:column;
+}
+
+.header
+{
+	width:100%;
+	height:114px;
+	background-color:#0a0f27;
+}
+
+.NaconLogo
+{
+	margin-top:10px;
+	margin-left:30px;
+}
+
+.ContentOne
+{
+	width:100%;
+	height:618px;
+	background-color: white;
+}
+
+.Image
+{
+	margin-left:300px;
+	margin-top:250px;
+}
+
+h1
+{
+	font-size:22px;
+	font-family:Tahoma;
+	font-weight:lighter;
+	margin-left:500px;
+	margin-top:-150px;
+}
+
+.buttonOne
+{
+	padding:16px 22px;
+	margin-left:500px;
+}
+
+.flex-containerTwo
+{
+	display:flex;
+	max-width:990px;
+	height:468px;
+	margin:auto;
+	background-color:#0a0f27;
+	flex-wrap:wrap;
+	justify-content:space-between;
+	align-content:space-between;
+	flex-direction:row;
+}
+
+.flex-containerTwo > div
+{
+	background-color:white;
+	width:43%;
+	height:392px;
+	margin:30px;
+}
+
+h2
+{
+	font-size:20px;
+	font-weight:bold;
+	font-family:Tahoma;
+	text-align:center;
+}
+
+.ImageOne
+{
+	margin-left:10px;
+}
+
+.buttonTwo
+{
+	padding:16px 50px;
+	margin-left:130px;
+	margin-top:15px;
+}
+
+h3
+{
+	font-size:20px;
+	font-family:Tahoma;
+	text-align:center;
+	font-weight:lighter;
+}
+
+.textbox
+{
+	width:80%;
+	height:32px;
+	margin-left:20px;
+}
+
+.buttonThree
+{
+	padding:16px 50px;
+	margin-left:120px;
+	margin-top:20px;
+}
